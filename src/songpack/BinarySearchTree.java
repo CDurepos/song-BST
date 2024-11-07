@@ -299,15 +299,15 @@ public class BinarySearchTree {
      * A node class for songpack.BinarySearchTree
      */
     private static class Node<T> {
-        private final Song data;
-        private Node<Song> left, right;
+        private final T data;
+        private Node<T> left, right;
 
         public Node() {
             this.data = null;
             this.left = this.right = null;
         }
 
-        public Node(Song data) {
+        public Node(T data) {
             this.data = data;
             this.left = this.right = null;
 
